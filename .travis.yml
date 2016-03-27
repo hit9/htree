@@ -1,0 +1,11 @@
+language: go
+
+go:
+  - 1.5.2
+  - 1.6
+
+install:
+  - go get github.com/golang/lint/golint
+  - go get github.com/GeertJohan/fgt
+
+script: fgt golint && go test
