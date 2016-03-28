@@ -50,14 +50,14 @@ is constant level, and the entries utilization is 100%.
 Compare To Map
 
 Although hashtable is very fast with O(1) time complexity, but there is always
-about ~25% table entries are unused, because the hash-table load factor is .75.
-And this htree is suitable for memory-bounded cases.
+about ~25% table entries are unused, because the hash-table load factor is usually
+.75. And this htree is suitable for memory-bounded cases.
 
 HTree is better for local locks if you want a safe container.
 
 Map may need to rehash and resize on insertions.
 
-Goroutine Safety.
+Goroutine Safety
 
 No. Lock granularity depends on the use case.
 
