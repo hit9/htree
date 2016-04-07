@@ -31,7 +31,7 @@ func main() {
 	after := stats.Alloc
 	total := float64(after - before)
 	fmt.Printf("%5d entry %9.1f B %5.1f B/entry", *size, total, total/float64(*size))
-	if t.Len() > 0 { // Make sure sl won't be gc
+	if t.Len() > 0 { // Make sure t won't be gc
 		fmt.Printf("\n")
 	}
 }
