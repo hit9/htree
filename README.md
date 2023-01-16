@@ -3,7 +3,7 @@ HTree
 
 Package htree implements the in-memory hash tree.
 
-https://godoc.org/github.com/hit9/htree
+https://pkg.go.dev/github.com/hit9/htree
 
 Example
 -------
